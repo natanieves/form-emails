@@ -19,22 +19,24 @@
       <section
         class="bg-white shadow-sm border mx-5 "
       >
-        <form class="p-5">
+        <form id="form" class="p-5" >
           <div class="mb-3">
             <label for="email" class="form-label fw-bold">Email</label>
             <input
               type="email"
               class="form-control"
               id="email"
+              name="email"
               placeholder="Ej: mail@empresa.com"
             />
           </div>
           <div class="mb-3">
-            <label for="text" class="form-label fw-bold">Asunto</label>
+            <label for="asunto" class="form-label fw-bold">Asunto</label>
             <input
               type="text"
               class="form-control"
-              id="text"
+              id="asunto"
+              name="asunto"
               placeholder="Asunto Email"
             />
           </div>
@@ -44,22 +46,25 @@
             >
             <textarea
               class="form-control"
-              id="message"
-              name="message"
+              id="mensaje"
+              name="mensaje"
               placeholder="Mensaje de email"
-              rows="7"
+              rows="4"
             ></textarea>
           </div>
           <div id="buttons" class="d-flex align-items-center justify-content-between gap-3 mt-2">
-            <button type="button" class="btn btn-primary fw-bold w-50" disabled >
+            <button type="submit" class="btn btn-primary fw-bolder w-50" disabled >
               Enviar
             </button>
-            <button type="button" class="btn btn-dark fw-bold w-50">
+            <button type="reset" class="btn btn-dark fw-bolder w-50">
               Reset
             </button>
           </div>
         </form>
+        <div id='spinner' class="justify-content-center visually-hidden mb-3"> 
+          <div class="spinner-border text-primary" role="status"></div>
       </section>
     </main>
+    <script src="app.js"></script>
   </body>
 </html>
